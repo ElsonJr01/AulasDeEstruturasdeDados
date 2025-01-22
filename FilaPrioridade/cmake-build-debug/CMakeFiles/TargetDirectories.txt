@@ -1,0 +1,3 @@
+C:/Users/elson.sousa/CLionProjects/CLionProjects/FilaPrioridade/cmake-build-debug/CMakeFiles/FilaPrioridade.dir
+C:/Users/elson.sousa/CLionProjects/CLionProjects/FilaPrioridade/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/elson.sousa/CLionProjects/CLionProjects/FilaPrioridade/cmake-build-debug/CMakeFiles/rebuild_cache.dir
