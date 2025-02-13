@@ -2,16 +2,29 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct lista Lista;
+typedef struct No {
+    int info;
+    struct No *prox;
+} No;
 
-Lista* lista_cria(void);
-void lista_insere(Lista* l, float v);
-float lista_retira(Lista* l);
-int lista_vazia(Lista* l);
-void lista_libera(Lista* l);
-void combina_listas(Lista* l_res, Lista* l1, Lista* l2);
-int eh_palindromo(char* str);
-void inverte_string(char* str);
-void lista_inverte(Lista* l);
-void lista_remove_repetidos(Lista* l);
+typedef struct NoStr {
+    char info[100];
+    struct NoStr *prox;
+} NoStr;
+
+// Funções
+No* cria_lista();
+No* insere(No* lista, int valor);
+No* remove_k_esimo(No* lista, int k);
+No* remove_valor(No* lista, int v);
+No* concatena_listas(No* lista1, No* lista2);
+No* inverte_lista(No* lista);
+No* copia_lista_str(NoStr* lista);
+int comprimento_lista(No* lista);
+int conta_maiores(No* lista, int x);
+int ultimo_valor(No* lista);
+int listas_iguais(No* lista1, No* lista2);
+void remove_ocorrencias(No** lista, int x);
+void imprime_lista(No* lista);
+
 
